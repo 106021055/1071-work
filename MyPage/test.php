@@ -61,13 +61,15 @@
                 <?php
                 $n = $_POST["N"];
                 $m = $_POST["M"];
-
+                echo "<table border='1'>";
                 for ($i = 1; $i <= $n; $i++){
+                    echo "<tr>";
                     for ($j = 1; $j <= $n; $j++){
-                        echo $i*$j." ";
+                        echo "<td style='width: 30px; text-align: center'>" . $i*$j."</td> ";
                     }
-                    echo"<br>";
+                    echo"</tr>";
                 }
+                echo "</table>";
                 ?>
             </div>
         </div>
